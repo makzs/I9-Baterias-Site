@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  header, main, footer {
+    text-align: center;
+  }
+  
+  header, footer {
+    flex: 0;
+  }
+  
+  main {
+    flex: 2;
+  }
+  
+  header {
+    border: 1px solid black;
+  }
+  
+  main {
+    border: 1px solid black;
+  }
+  
+  footer {
+    border: 1px solid black;
+  }
