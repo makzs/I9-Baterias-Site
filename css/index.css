@@ -37,3 +37,14 @@
   footer {
     border: 1px solid black;
   }
+  
+  a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+  }
+
+  button:hover {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
