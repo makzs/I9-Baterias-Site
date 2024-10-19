@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I9+ Baterias</title>
     <link rel="stylesheet" href="../css/index.css">
+    
 </head>
 <body>
+    <!--Script do tempo de rotação dos slides, tem no js mas n tava funcionando-->>
+    <script>
+        let counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        }, 10000); // Altera o slide a cada 10 segundos
+    </script>
     
     <header>
         <img src="Imagens/logo.png" alt="Logo da Empresa" id="logo">
-        <h1> Página Inicial</h1>
+        <h1>Página Inicial</h1>
         <nav>
             <ul>
               <li><a href="index.html">Início</a></li>
@@ -20,11 +32,49 @@
               <li><a href="perguntasFrequentes.html">FAQ</a></li>
             </ul>
           </nav>
-          
     </header>
 
     <main>
         <h1>Main</h1>
+    
+<div class="slider">
+            <div class="slides">
+
+                <!-- Radio Buttons -->
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <!-- Slide images -->
+                <div class="slide first">
+                    <img src="Imagens/slideMissao.png" alt="imagem1">
+                </div>
+
+                <div class="slide">
+                    <img src="Imagens/slideVisao.png" alt="imagem2">
+                </div>
+
+                <div class="slide">
+                    <img src="Imagens/slideValores.png" alt="imagem3">
+                </div>
+
+                <!-- Navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+            </div>
+
+            <!-- Manual navigation buttons -->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
     </main>
 
     <footer>
