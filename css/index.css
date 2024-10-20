@@ -23,7 +23,6 @@ header {
   padding: 40px 0;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  
 }
 
 header h1 {
@@ -103,7 +102,7 @@ footer {
 }
 
 #logo {
-  max-width: 350px; /* Ajuste a largura máxima conforme necessário */
+  max-width: 280px; /* Ajuste a largura máxima conforme necessário */
   height: auto;
   position: absolute;
   top: -65px;
@@ -219,4 +218,4 @@ Tentativa de deixar os botões com cor quando o slide está selecionado
 
   #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #8454af;
-  }*/
+  }

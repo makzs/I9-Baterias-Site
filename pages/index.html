@@ -8,21 +8,9 @@
     
 </head>
 <body>
-    <!--Script do tempo de rotação dos slides, tem no js mas n tava funcionando-->>
-    <script>
-        let counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 3){
-                counter = 1;
-            }
-        }, 10000); // Altera o slide a cada 10 segundos
-    </script>
     
     <header>
         <img src="Imagens/logo.png" alt="Logo da Empresa" id="logo">
-        <h1>Página Inicial</h1>
         <nav>
             <ul>
               <li><a href="index.html">Início</a></li>
@@ -35,9 +23,8 @@
     </header>
 
     <main>
-        <h1>Main</h1>
     
-<div class="slider">
+        <div class="slider">
             <div class="slides">
 
                 <!-- Radio Buttons -->
@@ -80,6 +67,8 @@
     <footer>
         <h1>Footer</h1>
     </footer>
+
+    <script src="../js/index.js"></script>
 
 </body>
 </html>
