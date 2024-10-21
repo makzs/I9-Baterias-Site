@@ -10,3 +10,9 @@ hr{
   margin: auto;
   width: 1200px;
 }
+
+.linhas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
