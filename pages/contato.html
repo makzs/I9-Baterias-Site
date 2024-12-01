@@ -43,44 +43,52 @@
 
       <div class="col-11 m-auto pt-5">
         <h2 class="text-center">Nos Contate</h2>
-        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis iure maxime facere. Obcaecati quibusdam illum, perspiciatis ipsum necessitatibus laboriosam illo. Odit iste eaque quasi nemo accusamus porro maiores omnis nobis quod, dolore aliquam ad nostrum molestiae delectus distinctio! Hic repudiandae mollitia, enim sequi quos placeat! Esse delectus nemo tempora!</p>
+        <p class="text-center">Tem alguma dúvida ou deseja saber mais sobre nossos produtos e serviços? Nossa equipe está pronta para ajudar! Preencha o formulário abaixo e entraremos em contato o mais breve possível. Estamos à disposição para oferecer as melhores soluções e esclarecer todas as suas questões.</p>
       </div>
 
       <div class="container">
-        <div class="row">
+        <form 
+            action="https://formsubmit.co/sandro@inovemais.tec.br" 
+            method="POST">
+            <div class="row">
                 <br>
                 <h4 style="text-align:center">Como posso te ajudar?</h4>
-        </div>
-        <div class="row input-container">
+            </div>
+            <div class="row input-container">
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input type="text" required />
+                        <input type="text" name="nome" required />
                         <label>Nome</label> 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="styled-input">
-                        <input type="text" required />
+                        <input type="email" name="email" required />
                         <label>Email</label> 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="styled-input" style="float:right;">
-                        <input type="text" required />
+                        <input type="text" name="assunto" required />
                         <label>Assunto</label> 
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <textarea required></textarea>
+                        <textarea name="mensagem" required></textarea>
                         <label>Escreva sua mensagem!</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <div class="btn-lrg submit-btn">Enviar mensagem</div>
+                    <button type="submit" class="btn-lrg submit-btn">Enviar mensagem</button>
                 </div>
-        </div>
+            </div>
+            <!-- Configurações adicionais -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+        </form>
     </div>
+    
 
     <footer style="background: #333;" class="page-footer font-small blue mt-5 p-3">
         <div class="text-center">
@@ -88,6 +96,7 @@
                 <div class="footer-section about">
                     <h2>I9+ Baterias</h2>
                     <p>Empresa focada em soluções sustentáveis com o uso de baterias renováveis.</p>
+                    <p>Nossas outras redes: <a href="https://linktr.ee/inovemaisbateriaseeneregias">LinkTree</a> </p>
                 </div>
             </div>
             <div class="footer-bottom">
